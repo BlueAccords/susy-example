@@ -1,0 +1,53 @@
+// Requirements
+// ============
+
+@import "susy";
+
+// normally do :
+// $susy: layout(12 1 fluid float outside);
+$susy: (
+	// defines number of columns
+	columns: 12,
+	// defines spacing size relative to single column size between columns.
+	gutters: 1,
+	// fluid, grids will be calculated as %s relative to the container(Grid system)
+	// static, calculated as column width multiplies.
+	math: fluid,
+	// 
+	column-width: 40px,
+	// 90% of time using float layout
+	// alt: isolate, absolute positioning version
+	output: float,
+	// gutter(space inbetween columns)
+	// before, after, split(50/50), inside, inside-static
+	gutter-position: after,
+	// flow left to right or right to left(rtl)
+	flow: ltr,
+	// set auto for static layouts
+	container: auto,
+	container-position: center,
+	// where to float elements when its by iself on the last row
+	// from makes it left in ltr flow, and right in rtl flow
+	// to floats in the opposite of the defined flow direction
+	last-flow: to,
+	global-box-sizing: border-box,
+
+	debug: (
+		image: show,
+
+		color: rgba(#656, .25),
+		
+		// alt is overlay
+		output: background,
+
+		toggle: top right,
+
+		),
+	use-custom: (
+		background-image: true,
+		background-options: false,
+		box-sizing: true,
+		clearfix: false,
+		rem: true,
+		)
+	);

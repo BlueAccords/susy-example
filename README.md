@@ -1,3 +1,3 @@
 # susy-example
-example susy project
+example susy project.  
 Nothing fancy.

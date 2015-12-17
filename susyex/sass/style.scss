@@ -2,3 +2,15 @@
 // ======
 
 @import "grids";
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/layout";
+@import "breakpoint";
+
+header {
+	height: 100px;
+	background: $blue;
+	color: $white;
+	margin-bottom: 10px;
+	padding: 10px
+}

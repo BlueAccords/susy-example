@@ -84,3 +84,16 @@ footer {
 	padding: 10px;
 	clear: both;
 }
+
+header {
+	@include full;
+	.logo {
+		// can include wide/wider to take up more gutter space.
+		@include span(1.35);
+	}
+}
+
+.wrapper {
+	// can include px size for container.
+	@include container();
+}

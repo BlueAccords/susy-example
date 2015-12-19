@@ -93,7 +93,105 @@ header {
 	}
 }
 
+h1 {
+	@include span(last 2);
+	@include breakpoint((max-width 50em)){
+		@include span(last 4);
+	}
+	
+}
+
+.nav {
+	@include full;
+}
+
+.nav-item {
+	@include span(3 of $nav_susy_layout);
+	margin-bottom: span(1);
+}
+
 .wrapper {
 	// can include px size for container.
 	@include container();
 }
+
+.first-row {
+	clear: both;
+
+	.first {
+		@include span(first 4);
+	}
+
+	.second {
+		@include span(last 8);
+		div:nth-child(1){
+			@include span(2 at 1 of 8);
+		} 
+		div:nth-child(2){
+			@include span(2 at 3 of 8);
+		} 
+		div:nth-child(3){
+			@include span(2 at 5 of 8);
+		} 
+		div:nth-child(4){
+			@include span(2 at 7 of 8);
+		} 
+	}
+}
+
+.pic-gallery {
+	@include clearfix;
+	padding: gutter(12);
+
+	padding: 0 10px;
+
+	div {
+		@include gallery(2 of 12);
+
+		@include breakpoint((max-width 60em)) {
+			@include gallery(4 of 12);
+		}
+	
+		@include breakpoint((max-width 40em)) {
+			@include gallery(6 of 12);
+		}
+
+		
+	}
+
+	div:nth-child(5){
+		//@include last();
+		
+	}
+
+	div:nth-child(1){
+		//@include pull(x) to pull it left x;
+		//pre moves it to the right x where x is pre(x);
+		//@include pre(1);
+		//@include prefix(x); moves the content to the right 1 column. alt: suffix(x);
+		//@include suffix(1);
+	}
+}
+
+.content-bar {
+	padding: 0 10px;
+	margin-top: gutter();
+
+	div:nth-child(1){
+		@include span(6 of 12);
+		@include gutters(3em inside);
+
+		@include breakpoint((max-width 40em)){
+			@include span(12 of 12);
+		}
+	}
+
+	div:nth-child(2){
+		@include span(last 6 of 12);
+
+		@include breakpoint((max-width 40em)){
+			@include span(12 of 12);
+		}
+	}
+}
+

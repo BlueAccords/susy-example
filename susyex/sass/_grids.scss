@@ -2,6 +2,7 @@
 // ============
 
 @import "susy";
+@import "compass";
 
 // normally do :
 // $susy: layout(12 1 fluid float outside);
@@ -51,3 +52,5 @@ $susy: (
 		rem: true,
 		)
 	);
+
+$nav_susy_layout: layout(12 0 fluid float inside);

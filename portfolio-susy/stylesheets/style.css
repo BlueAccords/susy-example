@@ -611,3 +611,82 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* line 10, ../sass/style.scss */
+body {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../.rvm/gems/ruby-2.2.1/gems/susy-2.2.9/sass/susy/output/support/_clearfix.scss */
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 15, ../sass/style.scss */
+hr {
+  width: 20px;
+}
+
+/* line 20, ../sass/style.scss */
+header {
+  background-color: #222;
+}
+
+/* line 27, ../sass/style.scss */
+nav ul {
+  list-style: none;
+  margin-left: 65.21739%;
+}
+/* line 32, ../sass/style.scss */
+nav ul li {
+  width: 14.28571%;
+  float: left;
+  margin-right: 14.28571%;
+}
+/* line 35, ../sass/style.scss */
+nav ul li:last-child {
+  width: 14.28571%;
+  float: right;
+  margin-right: 0;
+}
+/* line 39, ../sass/style.scss */
+nav ul li a {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 43, ../sass/style.scss */
+nav ul li a:hover {
+  border-bottom: solid 2px #fff;
+}
+
+/* line 51, ../sass/style.scss */
+.intro {
+  text-align: center;
+  color: #FFF;
+  padding: 4rem 0;
+}
+
+/* line 60, ../sass/style.scss */
+.bio span {
+  border-bottom: 2px solid #000;
+}
+/* line 64, ../sass/style.scss */
+.bio h1 {
+  margin: 2rem 0;
+}
+/* line 68, ../sass/style.scss */
+.bio img {
+  width: 30.43478%;
+  float: left;
+  margin-right: 4.34783%;
+}
+/* line 72, ../sass/style.scss */
+.bio p {
+  width: 65.21739%;
+  float: right;
+  margin-right: 0;
+  padding: 1rem 0;
+}

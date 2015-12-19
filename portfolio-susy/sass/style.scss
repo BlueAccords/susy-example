@@ -6,3 +6,71 @@
 @import "partials/variables";
 @import "partials/layout";
 @import "breakpoint";
+
+body {
+	@include container();
+	@include show-grid(background);
+}
+
+hr {
+	width: 20px;
+}
+
+
+header {
+	background-color: #222;
+	
+}
+nav {
+	//background-color: #222;
+	
+	ul {
+		list-style: none;
+		//@include container;
+		margin-left: span(8 last);
+
+		li {
+			@include span(1 of 4);
+
+			&:last-child {
+				@include span(last 1 of 4);
+			}
+
+			a {
+				text-decoration: none;
+				color: #FFF;
+
+				&:hover {
+					border-bottom: solid 2px #fff;
+				}
+			}
+		}
+	}
+}
+
+.intro {
+	text-align: center;
+	//background-color: #222;
+	color: #FFF;
+	padding: 4rem 0;
+}
+
+.bio {
+
+	span {
+		border-bottom: 2px solid #000;
+	}
+
+	h1 {
+		margin: 2rem 0;
+	}
+	//@include container;
+	img {
+		@include span(4);
+	}
+
+	p {
+		@include span(8 last);
+		padding: 1rem 0;
+	}
+}

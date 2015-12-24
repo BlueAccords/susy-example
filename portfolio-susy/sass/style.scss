@@ -8,7 +8,7 @@
 @import "breakpoint";
 
 body {
-	@include container();
+	//@include container(auto);
 	@include show-grid(background);
 }
 
@@ -17,24 +17,35 @@ hr {
 }
 
 
-header {
+.top-intro {
 	background-color: #222;
-	
+	//@include span(12 of 12);
 }
-nav {
+
+header {
+	
+	@include container(1120px);
+}
 	//background-color: #222;
 	
+	
+
+.intro {
+	text-align: center;
+	//background-color: #222;
+	color: #FFF;
+	padding: 4rem 0;
+
 	ul {
 		list-style: none;
-		//@include container;
-		margin-left: span(8 last);
+		text-align: center;
 
 		li {
-			@include span(1 of 4);
-
-			&:last-child {
-				@include span(last 1 of 4);
-			}
+			display: inline-block;
+			
+			&:not(:last-child):after {
+  			content: " /"; 
+  			}
 
 			a {
 				text-decoration: none;
@@ -45,18 +56,13 @@ nav {
 				}
 			}
 		}
+		
+			
 	}
 }
 
-.intro {
-	text-align: center;
-	//background-color: #222;
-	color: #FFF;
-	padding: 4rem 0;
-}
-
 .bio {
-
+	@include container(1120px);
 	span {
 		border-bottom: 2px solid #000;
 	}

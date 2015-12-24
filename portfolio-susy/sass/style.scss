@@ -24,7 +24,7 @@ hr {
 
 header {
 	
-	@include container(1120px);
+	@include container($max-width);
 }
 	//background-color: #222;
 	
@@ -42,7 +42,7 @@ header {
 
 		li {
 			display: inline-block;
-			
+
 			&:not(:last-child):after {
   			content: " /"; 
   			}
@@ -62,7 +62,7 @@ header {
 }
 
 .bio {
-	@include container(1120px);
+	@include container($max-width);
 	span {
 		border-bottom: 2px solid #000;
 	}
@@ -78,5 +78,16 @@ header {
 	p {
 		@include span(8 last);
 		padding: 1rem 0;
+	}
+	padding-bottom: 3rem;
+}
+
+.gallery {
+	@include container($max-width);
+	.gallery-item {
+	
+		@include gallery(4 of 12);
+		padding-bottom: 2rem;
+	
 	}
 }

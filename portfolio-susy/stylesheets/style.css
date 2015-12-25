@@ -666,29 +666,43 @@ header:after {
   padding: 4rem 0;
 }
 /* line 39, ../sass/style.scss */
-.intro ul {
+.intro .nav-list {
   list-style: none;
   text-align: center;
 }
 /* line 43, ../sass/style.scss */
-.intro ul li {
+.intro .nav-list li {
   display: inline-block;
 }
 /* line 46, ../sass/style.scss */
-.intro ul li:not(:last-child):after {
+.intro .nav-list li:not(:last-child):after {
   content: " /";
 }
 /* line 50, ../sass/style.scss */
-.intro ul li a {
+.intro .nav-list li a {
   text-decoration: none;
   color: #FFF;
 }
 /* line 54, ../sass/style.scss */
-.intro ul li a:hover {
+.intro .nav-list li a:hover {
   border-bottom: solid 2px #fff;
 }
-
+/* line 62, ../sass/style.scss */
+.intro .social-media-list {
+  margin-left: 2rem;
+}
 /* line 64, ../sass/style.scss */
+.intro .social-media-list li {
+  display: inline-block;
+  padding-right: 2rem;
+}
+/* line 69, ../sass/style.scss */
+.intro .social-media-list li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 80, ../sass/style.scss */
 .bio {
   max-width: 1440px;
   margin-left: auto;
@@ -711,21 +725,21 @@ header:after {
   display: block;
   clear: both;
 }
-/* line 66, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .bio span {
   border-bottom: 2px solid #000;
 }
-/* line 70, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .bio h1 {
   margin: 2rem 0;
 }
-/* line 74, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .bio img {
   width: 30.43478%;
   float: left;
   margin-right: 4.34783%;
 }
-/* line 78, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .bio p {
   width: 65.21739%;
   float: right;
@@ -733,7 +747,7 @@ header:after {
   padding: 1rem 0;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .gallery {
   max-width: 1440px;
   margin-left: auto;
@@ -755,7 +769,7 @@ header:after {
   display: block;
   clear: both;
 }
-/* line 87, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .gallery .gallery-item {
   width: 30.43478%;
   float: left;

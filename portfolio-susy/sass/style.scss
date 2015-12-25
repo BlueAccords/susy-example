@@ -36,10 +36,10 @@ header {
 	color: #FFF;
 	padding: 4rem 0;
 
-	ul {
+	.nav-list{
 		list-style: none;
 		text-align: center;
-
+	
 		li {
 			display: inline-block;
 
@@ -56,9 +56,25 @@ header {
 				}
 			}
 		}
-		
 			
 	}
+
+	.social-media-list {
+		margin-left: 2rem;
+		li {
+			display: inline-block;
+			padding-right: 2rem;
+
+
+			a {
+				text-decoration: none;
+				color: #FFF;
+			}
+
+			
+		}
+			
+		}
 }
 
 .bio {
